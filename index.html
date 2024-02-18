@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="stylesheet" type="text/css" href="modern-normalize.css"/>
+  <link rel="stylesheet" type="text/css" href="utils.css"/>
+  <link rel="stylesheet" type="text/css" href="components/header.css"/>
+  <link rel="stylesheet" type="text/css" href="components/mobile-header.css"/>
+  <link rel="stylesheet" type="text/css" href="components/sect1.css"/>
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="header container">
+      <!--Logo-->
+      <img class="logo_first" src="images/logo.svg"/>
+    <nav class="header__menu">
+      <!--Logo-->
+      <img class="logo" src="images/logo.svg"/>
+      <!--Nav bar after logo-->
+      <ul class="header__menu">
+        <li>
+          <a class="features_one" href="#">Features<img src="images/icon-arrow-up.svg" class="arrow_up_one arrows"/><img src="images/icon-arrow-down.svg" class="arrow_down_one arrows"/></a>
+          <ul class="features_menu_one">
+            <li><img src="images/icon-todo.svg"/> List</li>
+            <li><img src="images/icon-calendar.svg"/> Calendar</li>
+            <li><img src="images/icon-reminders.svg"/> Reminder</li>
+            <li><img src="images/icon-planning.svg"/> Planning</li>
+          </ul>
+        </li>
+        <li>
+          <a class="features_two href="#">Company<img src="images/icon-arrow-up.svg" class="arrow_up_two arrows"/><img src="images/icon-arrow-down.svg" class="arrow_down_two arrows"/></a>
+          <ul class="features_menu_two">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </li>
+        <li>
+          <a class="header__links" href="#">Careers</a>
+        </li>
+        <li>
+          <a class="header__links" href="#">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav>
+      <!--Nav bar at the end of the screen-->
+      <ul class="header__menu nav2">
+        <li>
+          <a class="header__links" href="#">Login</a>
+        </li>
+        <li>
+          <button class="reg">Register</button>
+        </li>
+      </ul>
+    </nav>
+    <button class="header__bars"><img src="images/icon-menu.svg"/></button>
+  </header>
+
+  <!--Mobile Navigation-->
+  <div>
+    <nav class="mobile-nav">
+      <img src="images/icon-close-menu.svg" class="close_menu" />
+      <ul class="mobile-header">
+        <li>
+          <a class="mobile-features_one" href="#">Features<img src="images/icon-arrow-up.svg" class="arrow_up_one arrows"/><img src="images/icon-arrow-down.svg" class="arrow_down_one arrows" /></a>
+          <ul class="mobile-features_menu_one">
+            <li><img src="images/icon-todo.svg"/> List</li>
+            <li><img src="images/icon-calendar.svg"/> Calendar</li>
+            <li><img src="images/icon-reminders.svg"/> Reminder</li>
+            <li><img src="images/icon-planning.svg"/> Planning</li>
+          </ul>
+        </li>
+        <li>
+          <a class="mobile-features_two" href="#">Company<img src="images/icon-arrow-up.svg" class="arrow_up_two arrows"/><img src="images/icon-arrow-down.svg" class="arrow_down_two arrows"/></a>
+          <ul class="mobile-features_menu_two">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </li>
+        <li>
+          <a class="mobile-header__links" href="#">Careers</a>
+        </li>
+        <li>
+          <a class="mobile-header__links" href="#">About</a>
+        </li>
+        <li>
+          <a class="login_btn login" href="#">Login</a>
+        </li>
+        <li>
+          <button class="reg login_btn">Register</button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- End of Mobile Navigation-->
+  <main class="just_con">
+    <img src="images/image-hero-mobile.png" alt="mobile image" class="mobile_image container"/>
+    <section class="flex_sect container">
+      <section class="first_sect">
+        <h1 class="title">Make <br> remote work</h1>
+        <p class="subtitle">
+          Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+        </p>
+        <button class="btn">Learn more</button>
+        <ul class="clients">
+          <li>
+            <img src="images/client-databiz.svg" alt="clients"/>
+          </li>
+          <li>
+            <img src="images/client-audiophile.svg" alt="clients"/>
+          </li>
+          <li>
+            <img src="images/client-meet.svg" alt="clients"/>
+          </li>
+          <li>
+            <img src="images/client-maker.svg" alt="clients"/>
+          </li>
+        </ul>
+      </section>
+      <section class="second_sect">
+        <img src="images/image-hero-desktop.png" alt="desktop image" class="desktop_image"/>
+      </section>
+    </section>
+  </main>
+  <script src="components/main.js"></script>
+</body>
+</html>

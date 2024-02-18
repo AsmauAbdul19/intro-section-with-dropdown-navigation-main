@@ -1,0 +1,152 @@
+.desktop_image{
+    display: none;
+}
+
+.just_con{
+    text-align: center;
+}
+
+.first_sect{
+    margin-top: 4rem;
+    padding: 0.5rem;
+}
+
+.title{
+    font-size: var(--size-3xl);
+    padding: 0.5rem 0;
+}
+
+.title br{
+    display: none;
+}
+
+.subtitle{
+    color: var(--color-gray);
+    margin: 1rem 0;
+}
+
+.btn{
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.btn:hover{
+    border: 1px solid var(--color-black);
+    background-color: var(--color-white);
+    color: var(--color-black);
+    cursor: pointer;
+}
+
+.clients{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.clients li img{
+    width: var(--size-6xl);
+}
+
+/* xs */
+@media (min-width: 475px) {
+    .clients li img{
+        width: var(--size-7xl);
+    }
+
+    .title{
+        font-size: var(--size-4xl);
+    }
+
+    .subtitle{
+        margin: 1rem 2rem;
+    }
+    
+}
+
+/* s */
+@media (min-width: 640px) {
+    .title{
+        font-size: var(--size-5xl);
+    }
+}
+
+/* m */
+@media (min-width: 768px) {
+    .desktop_image{
+        display: block;
+        width: 100%;
+        height: 50%;
+    }
+
+    .mobile_image{
+        display: none;
+    }
+
+    .just_con{
+        text-align: left;
+    }
+
+    .flex_sect{
+        display: flex;
+        gap: 1;
+    }
+
+    .first_sect{
+        padding-right: 0.5rem;
+    }
+
+    .title br{
+        display: block;
+    }
+
+    .subtitle{
+        margin: 1rem 0;
+    }
+
+    .second_sect{
+        margin-top: 2rem;
+        padding-left: 1rem;
+        width: 100%;
+        height: 50rem;
+    }
+}
+
+/* l */
+@media (min-width: 1024px) {
+    .first_sect{
+        padding: 0 2.5rem;
+    }
+
+    .title{
+        font-size: var(--size-6xl);
+    }
+
+    .subtitle{
+        padding-right: 4rem;
+        font-size: var(--size-xl);
+    }
+
+    .second_sect{
+        padding: 0 2.5rem;
+
+    }
+
+    .clients li img{
+        width: var(--size-8xl);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .second_sect{
+        width: 60%;
+        height: 50rem;
+    }
+}
+
+/* xxl */
+@media (min-width: 1536px) {}
