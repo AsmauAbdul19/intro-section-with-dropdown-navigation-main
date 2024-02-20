@@ -1,3 +1,4 @@
+const header = document.querySelector('.header__menu')
 const headerBtn = document.querySelector('.header__bars');
 const mobileNav = document.querySelector('.mobile-nav');
 const closeMenu = document.querySelector('.close_menu')
@@ -13,9 +14,22 @@ const arrow_up_one = document.querySelector('.arrow_up_one');
 const arrow_down_one = document.querySelector('.arrow_down_one');
 const arrow_up_two = document.querySelector('.arrow_up_two');
 const arrow_down_two = document.querySelector('.arrow_down_two');
+const mobile_arrow_up_one = document.querySelector('.mobile_arrow_up_one');
+const mobile_arrow_down_one = document.querySelector('.mobile_arrow_down_one');
+const mobile_arrow_up_two = document.querySelector('.mobile_arrow_up_two');
+const mobile_arrow_down_two = document.querySelector('.mobile_arrow_down_two');
+var minWidth = 768;
+var windowWidth = window.innerWidth;
+
 
 headerBtn.addEventListener('click', () => {
     mobileNav.style.display = 'flex';
+})
+
+window.addEventListener('resize', () => {
+    if(windowWidth => 768 && mobileNav.style.display == 'block'){
+        mobileNav.style.display = 'none';
+    }
 })
 
 closeMenu.addEventListener('click', () => {
@@ -53,23 +67,23 @@ navFeaturedTwos.addEventListener('click', function(){
 mobileNavFeaturedOnes.addEventListener('click', function(){
     if(mobileNavFeatOne.style.display == 'block'){
         mobileNavFeatOne.style.display = 'none';
-        arrow_up_one.style.display = 'none';
-        arrow_down_one.style.display = 'inline';
+        mobile_arrow_up_one.style.display = 'none';
+        mobile_arrow_down_one.style.display = 'inline';
     }else{
         mobileNavFeatOne.style.display = 'block';
-        arrow_up_one.style.display = 'inline';
-        arrow_down_one.style.display = 'none';
+        mobile_arrow_up_one.style.display = 'inline';
+        mobile_arrow_down_one.style.display = 'none';
     }
 })
 
 mobileNavFeaturedTwos.addEventListener('click', function(){
     if(mobileNavFeatTwo.style.display == 'block'){
         mobileNavFeatTwo.style.display = 'none';
-        arrow_up_two.style.display = 'none';
-        arrow_down_two.style.display = 'inline';
+        mobile_arrow_up_two.style.display = 'none';
+        mobile_arrow_down_two.style.display = 'inline';
     }else{
         mobileNavFeatTwo.style.display = 'block';
-        arrow_up_two.style.display = 'inline';
-        arrow_down_two.style.display = 'none';
+        mobile_arrow_up_two.style.display = 'inline';
+        mobile_arrow_down_two.style.display = 'none';
     }
 })

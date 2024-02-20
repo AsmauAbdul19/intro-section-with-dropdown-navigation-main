@@ -20,6 +20,7 @@
 }
 
 .mobile-header{
+    width: 100%;
     list-style-type: none;
     margin-top: 3rem;
 }
@@ -80,12 +81,20 @@
 }
 
 .arrows{
-    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.mobile_arrow_up_one, .mobile_arrow_up_two{
+    display: none;
+}
+
+.new_div{
+    text-align: center;
 }
 
 .login{
-    margin-top: 4rem;
-    margin-left: 1rem;
+    display: block;
+    margin-top: 5rem;
 }
 
 .login_btn{
